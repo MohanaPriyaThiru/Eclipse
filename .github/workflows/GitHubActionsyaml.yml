@@ -44,18 +44,3 @@ jobs:
             target/reports/surefire.html
             target/surefire-reports/
           if-no-files-found: warn
-<<<<<<< Updated upstream
-=======
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
->>>>>>> Stashed changes
