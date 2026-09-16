@@ -1,9 +1,11 @@
 package com.RAAutomation;
 
-import static io.restassured.RestAssured.*;
-import io.restassured.response.Response;
+import static io.restassured.RestAssured.given;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
 
 public class PostMethodTest {
 	@Test
@@ -58,6 +60,8 @@ int bookingidReceived=	postResponse.jsonPath().getInt("bookingid");
 	Assert.assertEquals(postResponse.jsonPath().getString("booking.bookingdates.checkin"), "2026-09-01");
 	
 	postResponse.prettyPrint();
+	
+//	agged this comment line
 	
 	
 	
