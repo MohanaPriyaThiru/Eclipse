@@ -33,7 +33,7 @@ jobs:
         run: java -version
 
       - name: Run Maven tests
-        run: mvn clean test
+        run: mvn clean test -DtrimStackTrace=false
 
       - name: Upload Surefire Report
         if: always()
